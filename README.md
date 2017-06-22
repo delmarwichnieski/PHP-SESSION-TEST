@@ -2,7 +2,8 @@
 
 From http://php.net/manual/pt_BR/function.session-id.php
 
- ohcc at 163 dot com
+
+" ohcc at 163 dot com
  
 8 months ago
 
@@ -13,7 +14,7 @@ When session.use_strict_mode is set to 1 or true, you cannot use session_id($sid
     session_id($sid);
     session_start();
     var_dump(session_id() === $sid);// always false
-?>
+?>"
 
 with
 
