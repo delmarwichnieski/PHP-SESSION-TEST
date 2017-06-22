@@ -15,10 +15,20 @@ When session.use_strict_mode is set to 1 or true, you cannot use session_id($sid
     var_dump(session_id() === $sid);// always false
 ?>
 
-Change php.ini session.sid_length
+with
+
+session.use_strict_mode = 1
+
+and
+
+Changing php.ini session.sid_length
+
 from
+
 session.sid_length = 26
+
 to
+
 session.sid_length = 32
 
 and then get true on var_dump(session_id() === $sid);// always false
